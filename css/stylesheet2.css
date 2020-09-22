@@ -1,0 +1,261 @@
+/*
+	Template Name: BizCraft Responsive HTML5/CSS3 Template
+	Author: tripples
+	Author URI: http://shapebootstrap.net/user/tripples
+	Description: BizCraft Responsive HTML5/CSS3 Template.
+	Version: 1.0
+	*/
+
+
+/* Table of Content
+==================================================
+1.	Global Styles
+2. 	Typography
+3. 	Common Styles
+4.	Header area
+5.	Slideshow
+6.	Services and Features
+7.	Image Block
+6.	About (Landing and Featured Tab)
+9.	Portfolio
+10.	Counter
+11.	Team
+12.	Pricing
+13.	Testimonial
+14. Video block
+15.	Recent Post
+16. Clients
+17. Twitter
+18. Contact
+19. Footer
+20. Copyright
+21. Sub pages
+22. Blog
+23. Landing page
+24.	Style Swithcer (you can delete the css)
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@font-face {
+    font-family: 'JaapokkiRegular';
+    src: url('../fonts/jaapokki/jaapokki-regular.eot');
+    src: url('../fonts/jaapokki/jaapokki-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/jaapokki/jaapokki-regular.woff') format('woff'), url('../fonts/jaapokki/jaapokki-regular.ttf') format('truetype'), url('../fonts/jaapokki/jaapokki-regular.svg#JaapokkiRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global styles
+================================================== */
+
+html {
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: #6A6A6A;
+    background: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #51284f;
+}
+
+.body-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#size-1 {
+    size: 50px;
+    font-size: 30px;
+    background: transparent;
+}
+
+a.read-more {
+    color: #323232;
+}
+
+section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.ts-padding {
+    padding: 50px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.media>.pull-left {
+    margin-right: 20px;
+}
+
+.heading {
+    padding-bottom: 50px;
+    margin-top: 10px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.gap-60 {
+    clear: both;
+    height: 60px;
+}
+
+.gap-40 {
+    clear: both;
+    height: 40px;
+}
+
+.gap-30 {
+    clear: both;
+    height: 30px;
+}
+
+.gap-20 {
+    clear: both;
+    height: 20px;
+}
+
+a:focus {
+    outline: 0;
+}
+
+
+/* Icon pentagon */
+
+.icon-pentagon {
+    display: inline-block;
+    height: 24px;
+    width: 40px;
+    position: relative;
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.icon-pentagon:hover {
+    color: rgba(0, 0, 0, .5);
+}
+
+.icon-pentagon:before {
+    border-left: 20px solid rgba(0, 0, 0, 0);
+    border-right: 20px solid rgba(0, 0, 0, 0);
+    top: -10px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.icon-pentagon:after {
+    border-left: 20px solid rgba(0, 0, 0, 0);
+    border-right: 20px solid rgba(0, 0, 0, 0);
+    bottom: -10px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.icon-pentagon i {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.service-icon {
+    height: 46px;
+    width: 90px;
+    margin-bottom: 30px;
+}
+
+.service-icon:before {
+    border-left: 45px solid rgba(0, 0, 0, 0);
+    border-right: 45px solid rgba(0, 0, 0, 0);
+    top: -30px;
+}
+
+.service-icon:after {
+    border-left: 45px solid rgba(0, 0, 0, 0);
+    border-right: 45px solid rgba(0, 0, 0, 0);
+    bottom: -30px;
+}
+
+.service-icon i {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+
+/* Carousel controller */
+
+.carousel-control {
+    width: auto;
+}
+
+.ts-carousel-controller {
+    text-align: center;
+    padding-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.ts-carousel-controller .left,
+.ts-carousel-controller .right,
+.owl-controls .owl-prev,
+.owl-controls .owl-next {
+    cursor: pointer;
+    background: #f6f6f6;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #989898;
+    opacity: 1;
+    top: auto;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.owl-controls .owl-next {
+    margin-left: 6px;
+}
